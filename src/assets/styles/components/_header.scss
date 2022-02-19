@@ -1,0 +1,20 @@
+.header-home {
+  background-color: transparent;
+  padding-top: 45px;
+}
+
+.header-main {
+  padding-top: 125px;
+
+  &--slogan {
+    @include fonts($colorBlack, $fontLight, 15);
+    line-height: rem(19);
+    margin-bottom: 25px;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+
+.header-logo {
+  margin-bottom: 0;
+}

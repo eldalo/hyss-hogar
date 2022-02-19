@@ -1,0 +1,173 @@
+@media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+@media handheld, only screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media handheld, only screen and (max-width: 816px) {
+  .header-main {
+    padding-top: 15px;
+  }
+
+  .main-menu {
+    &--burger {
+      height: 30px;
+      right: 10px;
+      top: 8%;
+      width: 35px;
+
+      &__action {
+        height: 30px;
+
+        &:hover ~ span {
+          &:nth-last-child(2) {
+            height: 30px;
+          }
+        }
+
+        &:checked ~ span {
+          transform: rotate(-30deg) translate(-7px, -3px);
+
+          &:last-child {
+            transform: rotate(25deg) translate(-17px, 7.4px);
+          }
+        }
+      }
+
+      &__line {
+        height: 25px;
+      }
+    }
+
+    &--section {
+      padding-top: 80px;
+    }
+
+    &--list {
+      &__item {
+        a {
+          font-family: $fontLight;
+          font-size: rem(38);
+          line-height: rem(46);
+        }
+      }
+    }
+  }
+
+  .footer-home {
+    padding-top: 50px;
+
+    &--menu {
+      display: none;
+    }
+
+    &--logo {
+      margin-bottom: 90px;
+    }
+
+    &--copy {
+      margin-top: 30px;
+    }
+  }
+
+  .home-banner {
+    padding-top: 115px;
+    height: 100%;
+
+    &--excerpt {
+      &__title {
+        font-size: rem(48);
+        line-height: rem(54);
+      }
+
+      p,
+      p.small {
+        font-size: rem(18);
+        line-height: rem(22);
+      }
+    }
+  }
+
+  .home-services {
+    .slick-slider {
+      margin-bottom: 40px;
+    }
+
+    &--item {
+      &__ico {
+        display: none;
+      }
+
+      &__excerpt {
+        .subtitle {
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .home-title {
+    &--big {
+      font-size: rem(24);
+      line-height: rem(32);
+    }
+  }
+
+  .home-testimonials {
+    &--item {
+      &__thumbnail {
+        img {
+          margin: 0 auto 15px;
+        }
+      }
+
+      &__excerpt {
+        p {
+          font-size: rem(18);
+          line-height: rem(24);
+        }
+      }
+    }
+  }
+
+  .home-clients {
+    padding-top: 35px;
+
+    &--item {
+      img {
+        width: 55%;
+      }
+    }
+  }
+
+  .home-banner-cta {
+    &--excerpt {
+      &__title {
+        font-size: rem(24);
+        line-height: rem(32);
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  .main--layout {
+    height: 100%;
+    padding-bottom: 25px;
+  }
+
+  .slick-slider {
+    .slick-arrow {
+      display: none !important;
+    }
+  }
+}
+
+@media handheld, only screen and (max-width: 414px) {
+  .main--title {
+    font-size: rem(50);
+    line-height: rem(60);
+  }
+}

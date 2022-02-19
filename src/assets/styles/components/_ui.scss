@@ -1,0 +1,60 @@
+.btn {
+  border-radius: 0;
+  font-size: rem(14);
+  font-family: $fontMedium;
+  line-height: rem(24);
+  transition: all .7s ease-in-out;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.btn-outline-main {
+  background-color: transparent;
+  border-color: $colorDefault;
+  color: $colorDefault;
+
+  &:hover {
+    background-color: $colorDefault;
+    border-color: $colorDefault;
+    color: $colorWhite;
+  }
+}
+
+.main--layout {
+  height: 100vh;
+}
+
+.main--bg-green {
+  background: rgba(250,255,249,1);
+  background: -moz-linear-gradient(top, rgba(250,255,249,1) 0%, rgba(233,238,232,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250,255,249,1)), color-stop(100%, rgba(233,238,232,1)));
+  background: -webkit-linear-gradient(top, rgba(250,255,249,1) 0%, rgba(233,238,232,1) 100%);
+  background: -o-linear-gradient(top, rgba(250,255,249,1) 0%, rgba(233,238,232,1) 100%);
+  background: -ms-linear-gradient(top, rgba(250,255,249,1) 0%, rgba(233,238,232,1) 100%);
+  background: linear-gradient(to bottom, rgba(250,255,249,1) 0%, rgba(233,238,232,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafff9', endColorstr='#e9eee8', GradientType=0 );
+}
+
+.main--excerpt {
+  h2 {
+    @include fonts($colorBlack, $fontLight, 85);
+    line-height: rem(105);
+  }
+
+  h3 {
+    @include fonts($colorBlack, $fontLight, 40);
+    line-height: rem(45);
+  }
+
+  p {
+    @include fonts($colorBlack, $fontRegular, 16);
+    line-height: rem(20);
+  }
+
+  strong {
+    font-family: $fontMedium;
+  }
+}

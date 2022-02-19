@@ -1,0 +1,144 @@
+.home-banner {
+  padding-bottom: 265px;
+  padding-top: 250px;
+
+  &--excerpt {
+    &__title {
+      @include fonts($colorBlack, $fontLight, 65);
+      line-height: rem(72);
+      margin-bottom: 20px;
+    }
+
+    p {
+      @include fonts($colorBlack, $fontLight, 20);
+      line-height: rem(30);
+    }
+  }
+}
+
+.home-services {
+  padding-bottom: 70px;
+  padding-top: 70px;
+
+  &--item {
+    &__excerpt {
+      .subtitle {
+        @include fonts($colorBlack, $fontMedium, 24);
+        line-height: rem(30);
+      }
+
+      p {
+        @include fonts($colorBlack, $fontLight, 16);
+        line-height: rem(20);
+      }
+    }
+  }
+}
+
+.home-title {
+  margin-top: 35px;
+
+  &--sub {
+    @include fonts($colorDefault, $fontLight, 16);
+    line-height: rem(20);
+    text-transform: uppercase;
+  }
+
+  &--big {
+    @include fonts($colorBlack, $fontMedium, 30);
+    line-height: rem(35);
+  }
+
+  &--small {
+    @include fonts($colorBlack, $fontLight, 16px);
+    line-height: rem(24);
+  }
+}
+
+.home-testimonials {
+  background-color: #FCFCFC;
+  padding-bottom: 70px;
+  padding-top: 70px;
+
+  &--item {
+    &__excerpt {
+      p {
+        @include fonts($colorBlack, $fontLight, 30);
+        line-height: rem(38);
+
+        &.author {
+          font-family: $fontMedium;
+          font-size: rem(16);
+          line-height: rem(21);
+        }
+      }
+    }
+  }
+}
+
+.home-clients {
+  padding-bottom: 70px;
+  padding-top: 35px;
+
+  &--item {
+    img {
+      width: 40%;
+    }
+  }
+}
+
+.home-banner-cta {
+  background-color: #FCFCFC;
+  padding-bottom: 70px;
+  padding-top: 70px;
+
+  &--excerpt {
+    &__title {
+      @include fonts($colorBlack, $fontMedium, 30);
+      line-height: rem(32);
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .btn-outline-main {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    p {
+      @include fonts($colorText, $fontLight, 16);
+      line-height: rem(22);
+    }
+
+    img {
+      margin-top: 15px;
+      width: 15%;
+    }
+  }
+}
+
+.home-contact {
+  padding-bottom: 70px;
+  padding-top: 35px;
+
+  &--form {
+    &__input {
+      border: 0.5px solid $colorBlack;
+      cursor: pointer;
+      @include placeholder($colorBlack, $fontLight, 16);
+      display: block;
+      line-height: rem(44);
+      margin-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+    }
+
+    @include placeholder($colorBlack, $fontLight, 16);
+  }
+
+  .btn-outline-main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

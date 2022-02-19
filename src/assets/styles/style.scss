@@ -1,0 +1,21 @@
+// BOOTSTRAP
+@import '~bootstrap/scss/bootstrap';
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+// CONFIG
+@import 'modules/vars';
+
+// CONFIG MODULES
+@import 'modules/position';
+@import 'modules/normalize';
+@import 'modules/typography';
+@import 'modules/app';
+@import 'modules/animated';
+
+// COMPONENTS
+@import 'components/ui';
+@import 'components/home';
+
+// RESPONSIVE
+@import 'modules/breakpoints';
